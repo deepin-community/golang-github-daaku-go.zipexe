@@ -1,5 +1,41 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-daaku-go.zipexe (1.0.1-2) unstable; urgency=medium
 
-  * Initial release
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.0, no changes needed.
+  * Apply multi-arch hints. + golang-github-daaku-go.zipexe-dev: Add Multi-Arch: foreign.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 28 Nov 2022 22:10:46 +0000
+
+golang-github-daaku-go.zipexe (1.0.1-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Anthony Fok ]
+  * New upstream version 1.0.1
+  * Apply "cme fix dpkg" fixes:
+    - Change Priority from "extra" to "optional"
+    - Update debhelper dependency to "Build-Depends: debhelper-compat (= 12)"
+    - Bump Standards-Version to 4.4.1 (no change)
+    - Use secure https protocol for Format field in debian/copyright
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Add myself to the list of Uploaders
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+
+ -- Anthony Fok <foka@debian.org>  Mon, 02 Dec 2019 23:36:17 -0700
+
+golang-github-daaku-go.zipexe (0.0~git20150329.0.a5fe243-2) unstable; urgency=medium
+
+  * Replace golang-go with golang-any in Build-Depends, remove golang-go from Depends
+
+ -- Konstantinos Margaritis <markos@debian.org>  Tue, 08 Aug 2017 19:07:14 +0300
+
+golang-github-daaku-go.zipexe (0.0~git20150329.0.a5fe243-1) unstable; urgency=medium
+
+  * Initial release (Closes: #846171)
+
+ -- Liang Yan <liangy@hpe.com>  Tue, 15 Nov 2016 15:07:12 -0700
