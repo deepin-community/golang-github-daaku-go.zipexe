@@ -1,0 +1,4 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/daaku-go.zipexe-$1\.tar\.gz/ \
+  https://github.com/daaku/go.zipexe/tags .*/v([\d\.]+)\.tar\.gz
+
